@@ -50,7 +50,16 @@ function sumNumbers(numbersArray) {
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersArray) {
+  if (numbersArray.length === 0) {
+    return 0;
+  }
+
+  const sum = sumNumbers(numbersArray);
+  const average = sum / numbersArray.length;
+
+  return average;
+}
 
 
 
